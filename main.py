@@ -52,6 +52,9 @@ def choice_checker (question):
 
 # Main routine
 
+yes_no_list = ["yes", "no"]
+rps_list = ["Rock", "paper", "scissors", "xxx"]
+
 rounds_played = 0
 choose_instruction = "Please choose rock (r), paper"  "(p) or scissors (s)"
 
@@ -64,10 +67,10 @@ while end_game == "no":
 
   print ()
   if rounds == "":
-    heading = "continuous mode:" \ "Round {}".format(rounds_played + 1)
+    heading = "continuous mode:" / "Round {}".format(rounds_played + 1)
     
   else:  
-    heading = "Round {} of " \ "{}".format(rounds_played + 1, rounds)
+    heading = "Round {} of " / "{}".format(rounds_played + 1, rounds)
 
   print (heading)
   choose = input ()
